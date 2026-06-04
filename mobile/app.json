@@ -1,0 +1,29 @@
+{
+  "expo": {
+    "name": "HelloWorldApp",
+    "slug": "hello-world-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#f0f4f8"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#f0f4f8"
+      },
+      "package": "com.helloworld.app"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.helloworld.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
