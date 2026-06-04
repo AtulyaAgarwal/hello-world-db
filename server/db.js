@@ -28,4 +28,6 @@ const initDb = async () => {
   console.log('interactions table ready');
 };
 
+initDb();
+
 module.exports = pool;
