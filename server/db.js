@@ -16,4 +16,16 @@ pool.on('error', (err) => {
   process.exit(-1);
 });
 
-module.exports = pool;
+const initDb = async () => {
+  await pool.query(`
+    CREATE TABLE IF NOT EXISTS interactions (
+      id SERIAL PRIMARY KEY,
+      user_action TEXT NOT NULL,
+      response TEXT NOT NULL,
+      timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    );
+  `);
+  console.log('interactions table ready');
+};
+
+module.exports = { pool, initDb };
